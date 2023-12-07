@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './cores/navbar/navbar.component';
+import { NavbarComponent } from './cores/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +12,10 @@ import { NavbarComponent } from './cores/navbar/navbar.component';
 })
 export class AppComponent {
   title = 'frontend';
+  darkTheme: boolean = true;
+
+  changeTheme() {
+    this.darkTheme = !this.darkTheme;
+    console.log(this.darkTheme)
+  }
 }

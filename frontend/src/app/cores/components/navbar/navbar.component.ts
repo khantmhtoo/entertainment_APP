@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
   navItems: any = [
-    { alt: "all_list", path: '../../../assets/4Dash.png'},
-    { alt: "movie_list", path: '../../../assets/Movie.png'},
-    { alt: "series_list", path: '../../../assets/4Dash.png'},
-    { alt: "bookmarked", path: '../../../assets/Marked.png'},
+    { alt: "all_list", path: 'pi-th-large'},
+    { alt: "movie_list", path: 'pi-stop'},
+    { alt: "series_list", path: 'pi-video'},
+    { alt: "bookmarked", path: 'pi-bookmark-fill'},
   ]
 
   private _router = inject(Router)
