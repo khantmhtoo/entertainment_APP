@@ -1,32 +1,42 @@
 @import "./cores/styles/common-styles.scss";
 
 .main {
-    background-color: $dark-bg;
-    padding: 5rem 1rem;
-    height: 100vh;
-    color: $dark-font-color;
+  background-color: $dark-bg;
+  padding: 5rem 1rem;
+  height: 100vh;
+  color: $dark-font-color;
 }
 
 .theme-btn {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 999;
-    border: 1px solid transparent;
-    color: inherit;
-    background-color: inherit;
-    padding: .5rem;
-    transition: all ease-in-out .5s;
-    cursor: pointer;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+  border: 1px solid transparent;
+  color: $dark-font-color;
+  background-color: $dark-bg;
+  padding: 0.5rem;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
 
-    &:hover {
-        background-color: inherit;
-        border-radius: 50%;
-        border: 1px solid inherit;
-    }
+  &:hover {
+    background-color: $dark-bg;
+    border-radius: 50%;
+    border: 1px solid $dark-font-color;
+  }
 }
 
 .main.light {
-    background-color: $light-background;
-    color: $light-font-color;
+  background-color: $light-bg;
+  color: $light-font-color;
+}
+
+.theme-btn.light {
+  color: $light-font-color;
+  background-color: $light-bg;
+
+  &:hover {
+    background-color: $light-bg;
+    border: 1px solid $light-font-color;
+  }
 }

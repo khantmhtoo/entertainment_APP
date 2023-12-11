@@ -1,13 +1,17 @@
 <app-navbar></app-navbar>
-<div class="main light">
-    <router-outlet></router-outlet>
+<div class="main" [ngClass]="{ light: !darkTheme.themeDark }">
+  <router-outlet></router-outlet>
 </div>
 
-    <!-- Create A Service Which Handles The State Of Theme Mode -->
-    <button class="theme-btn light" (click)="changeTheme()">
-        @if(darkTheme) {
-            <i class="pi pi-moon" style="font-size: 25px"></i>
-        } @else {
-            <i class="pi pi-sun" style="font-size: 25px"></i>
-        }
-    </button>
+<!-- Create A Service Which Handles The State Of Theme Mode -->
+<button
+  class="theme-btn"
+  [ngClass]="{ light: !darkTheme.themeDark }"
+  (click)="changeTheme()"
+>
+  @if(darkTheme) {
+  <i class="pi pi-moon" style="font-size: 25px"></i>
+  } @else {
+  <i class="pi pi-sun" style="font-size: 25px"></i>
+  }
+</button>

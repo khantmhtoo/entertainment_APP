@@ -1,45 +1,49 @@
-@import '../../styles/common-styles.scss';
+@import "../../styles/common-styles.scss";
 
 .nav {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $dark-nav-bg;
+  padding: 1rem;
+  position: absolute;
+
+  &-list {
     display: flex;
-    align-items: center;
-    background-color: $dark-nav-bg;
-    padding: 1rem;
-    position: absolute;
+    padding: 0;
+    margin: auto;
+    gap: 20px;
+  }
 
-    &-list {
-        display: flex;
-        padding: 0;
-        margin: auto;
-        gap: 20px;
-    }
+  &-item {
+    list-style: none;
+    cursor: pointer;
+  }
 
-    &-item {
-        list-style: none;
-        cursor: pointer;
-    }
+  &-profile {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+  }
 
-    &-profile {
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        border: 2px solid #fff;
-    }
+  &-icon {
+    color: $dark-icon;
 
-    &-icon {
-        color: $dark-icon;
-    }
+    &:active {
+      color: white;
+     }
+  }
 
-    &-logo {
-        background-image: url("../../../../assets/Icon.png");
-        width: 31px;
-        height: 31px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
+  &-logo {
+    background-image: url("../../../../assets/Icon.png");
+    width: 31px;
+    height: 31px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
-// .nav.light {
-//     background-color: white;
-// }
+.nav.light {
+  background-color: $light-nav-background;
+}
