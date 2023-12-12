@@ -11,7 +11,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'In a future where interstellar travel is common, a crew embarks on a perilous journey beyond known galaxies, discovering secrets that defy the laws of physics.',
     rated: 'PG-13',
-    image: 'Link to Movie Poster',
+    image: '../../assets/moviesImg/johnwick4.jpg',
     country: 'United States',
     duration: 135,
     trailer_link: 'Link to Movie Trailer',
@@ -46,7 +46,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'Legendary hitman John Wick is pulled back into the criminal underworld and must face new and old enemies in a quest for survival.',
     rated: 'R',
-    image: 'Link to John Wick 4 Poster',
+    image: '',
     country: 'United States',
     duration: 120,
     trailer_link: 'Link to John Wick 4 Trailer',
@@ -81,7 +81,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.',
     rated: 'PG-13',
-    image: 'Link to Batman 2021 Poster',
+    image: '',
     country: 'United States',
     duration: 155,
     trailer_link: 'Link to Batman 2021 Trailer',
@@ -116,7 +116,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
     rated: 'PG-13',
-    image: 'Link to Inception Poster',
+    image: '',
     country: 'United States',
     duration: 148,
     trailer_link: 'Link to Inception Trailer',
@@ -151,7 +151,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
     rated: 'R',
-    image: 'Link to Shawshank Redemption Poster',
+    image: '',
     country: 'United States',
     duration: 142,
     trailer_link: 'Link to Shawshank Redemption Trailer',
@@ -186,7 +186,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.',
     rated: 'R',
-    image: 'Link to The Matrix Poster',
+    image: '',
     country: 'United States',
     duration: 136,
     trailer_link: 'Link to The Matrix Trailer',
@@ -221,7 +221,7 @@ export const moviesListData: MCMovie[] = [
     summary:
       'The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.',
     rated: 'PG-13',
-    image: 'Link to Forrest Gump Poster',
+    image: '',
     country: 'United States',
     duration: 142,
     trailer_link: 'Link to Forrest Gump Trailer',

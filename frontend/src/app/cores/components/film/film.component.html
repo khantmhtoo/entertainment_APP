@@ -1,0 +1,25 @@
+<div class="card" (click)="sendFilmId()">
+  <div class="card-upper">
+    @if(movieData.image !== "") {
+    <div
+      class="card-upper-img"
+      [ngStyle]="{ 'background-image': 'url(' + movieData.image + ')' }"
+    ></div>
+    } @else {
+    <img
+      class="card-upper-img"
+      src="../../../../assets/noimage.png"
+      alt="{{ movieData.title }}"
+    />
+    }
+    <i class="pi pi-bookmark card-upper-bookmark"></i>
+  </div>
+  <div>
+    <div class="card-lower">
+      <span>{{ movieData.release_year }} • </span>
+      <i class="pi pi-stop" style="font-size: 25px"></i>
+      <span>Movie • {{ movieData.rated }}</span>
+    </div>
+    <span class="card-title">{{ movieData.title }}</span>
+  </div>
+</div>

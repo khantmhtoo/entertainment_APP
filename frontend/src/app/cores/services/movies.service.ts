@@ -3,6 +3,7 @@ import { Injectable, inject } from '@angular/core';
 import { moviesListData } from '../../fixtures/movies.fixture';
 import { BehaviorSubject } from 'rxjs';
 import { MCMovie } from '../../fixtures/dataType';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Injectable({
   providedIn: 'root',
@@ -10,7 +11,11 @@ import { MCMovie } from '../../fixtures/dataType';
 export class MoviesService {
   private movieList!: MCMovie[];
   private movieListBS = new BehaviorSubject(this.movieList);
-  movieList$ = this.movieListBS.asObservable();
+  public movieList$ = this.movieListBS.asObservable();
+
+  movieLSignal = toSignal(this.movieList$, {
+    initialValue: [],
+  });
 
   // Currently Not Needed
   // private _http = inject(HttpClient)
@@ -19,8 +24,7 @@ export class MoviesService {
   // If We Use API -- We Have To Use A Function
   getMoviesList() {
     this.movieList = moviesListData;
-
-    // Fix this portion where movie is currently undefined
+    this.movieListBS.next(this.movieList);
   }
 
   // Get A Specific Movie By Its' Id Upon Clicked

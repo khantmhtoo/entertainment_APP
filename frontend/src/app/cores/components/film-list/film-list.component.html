@@ -1,0 +1,12 @@
+<div class="film">
+  <ul class="film-list">
+    @for(movie of movies; track $index) {
+    <li>
+      <app-film
+        [movieData]="movie"
+        (filmData)="onFilmDetail($event)"
+      ></app-film>
+    </li>
+    }
+  </ul>
+</div>

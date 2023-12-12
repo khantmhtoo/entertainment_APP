@@ -1,5 +1,13 @@
 <app-navbar></app-navbar>
 <div class="main" [ngClass]="{ light: !darkTheme.themeDark }">
+  <!-- Search Bar -->
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search..." (keyup)="onSearch($event)"/>
+  <div *ngIf="!searchTerm">
+    </div>
+  <ul>
+    <li *ngFor="let item of filteredItems">{{ item.name }}</li>
+  </ul>
+
   <router-outlet></router-outlet>
 </div>
 
